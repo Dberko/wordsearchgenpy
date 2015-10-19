@@ -24,7 +24,7 @@ def put_word(word, grid):
 
 grid = [[random.choice(string.uppercase) for i in xrange(0, width)] for j in xrange(0, height)]
 
-word = "HELLO"
-grid = put_word(word, grid)
+for word in ["TEST", "DOCTOR", "WHO"]:
+	grid = put_word(word, grid)
 
 print "\n".join(map(lambda row: " ".join(row), grid))
